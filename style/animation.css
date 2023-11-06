@@ -71,13 +71,12 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 @keyframes loaderAnimation {
   from {
-    display: flex;
+    visibility: visible;
   }
   to {
-    display: none;
+    visibility: hidden;
   }
 }
 .homepage_body {
@@ -109,5 +108,5 @@
 }
 
 .dessert {
-  animation: starters 5S;
+  animation: starters 5s;
 }/*# sourceMappingURL=animation.css.map */

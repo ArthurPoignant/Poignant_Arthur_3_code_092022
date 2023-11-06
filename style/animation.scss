@@ -82,30 +82,47 @@ $gradient-color: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
 
 // Homepage loader
 .loader__container {
+  -webkit-animation: loaderAnimation 3s;
   animation: loaderAnimation 3s;
-  animation-fill-mode:forwards; 
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   .loader__icon {
     background: $gradient-color;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
   }
 }
 
+@-webkit-keyframes loaderAnimation {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
 @keyframes loaderAnimation {
-  from {display: flex;}
-  to {display: none;}
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
 }
 
 .homepage_body {
-  animation:  bodyScroll 10s;
+  animation: bodyScroll 10s;
 }
 
 @keyframes bodyScroll {
-  from {overflow: hidden;}
-  to {overflow: scroll;}
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: scroll;
+  }
 }
 
 // Menu section animation
@@ -115,8 +132,12 @@ $gradient-color: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 @keyframes starters {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main__course {
@@ -124,5 +145,5 @@ $gradient-color: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 .dessert {
-  animation: starters 5S;
+  animation: starters 5s;
 }
