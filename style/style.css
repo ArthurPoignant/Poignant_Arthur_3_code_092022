@@ -266,10 +266,10 @@
   color: #008766;
   display: flex;
   width: 80px;
-  height: 40px;
+  height: 29px;
   position: relative;
-  bottom: 215px;
-  margin-right: 15px;
+  bottom: 162px;
+  margin-right: 12px;
   justify-content: center;
   align-items: center;
   align-self: end;
@@ -280,7 +280,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 30%;
+  height: 0%;
   position: relative;
   top: 15px;
 }

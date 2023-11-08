@@ -5,7 +5,11 @@ $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 
 $gradient-color: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-$gradient-color-hover: linear-gradient(193deg, #b284eb -11.44%, #ff8bde 123.93%);
+$gradient-color-hover: linear-gradient(
+  193deg,
+  #b284eb -11.44%,
+  #ff8bde 123.93%
+);
 
 $title-font-family: "Shrikhand", cursive;
 $text-font-family: "Roboto", sans-serif;
@@ -279,12 +283,18 @@ $text-font-family: "Roboto", sans-serif;
       color: #008766;
       display: flex;
       width: 80px;
-      height: 40px;
+      height: 29px;
       position: relative;
-      bottom: 215px;
-      margin-right: 15px;
+      bottom: 162px;
+      margin-right: 12px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
       align-self: end;
       font-size: 14px;
       font-family: $text-font-family;
@@ -293,7 +303,7 @@ $text-font-family: "Roboto", sans-serif;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      height: 30%;
+      height: 0%;
       position: relative;
       top: 15px;
     }
